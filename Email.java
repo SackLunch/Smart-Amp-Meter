@@ -28,7 +28,6 @@ public class Email
 	static MimeMessage generateMailMessage;
 	/**		* FIELD:	Who the email will be sent to.		*/
 	private String recipient = "YOUR EMAIL HERE";
-	/**		* FIELD:	Product that the email is about.		*/
 	/**		* FIELD:	Formatter for the date.		*/
 	private DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 	/**		* FIELD:	Instance of the date the email was sent.		*/
@@ -40,10 +39,10 @@ public class Email
 	private String amperage;
 
 	/**
-	 * CONSTRUCTOR:						Constructs an object that has everything needed to send the emails.
+	 * CONSTRUCTOR:					Constructs an object that has everything needed to send the emails.
 	 * 				
-	 * @param recipient					Returns the recipient of the email which will be the sales rep.
-	 * @param product					Returns the product from the record.
+	 * @param recipient				Returns the recipient of the email which will be the sales rep.
+	 * @param product				Returns the product from the record.
 	 * @param serialNumber				Returns the serial number of the product.
 	 * @param returnLocation			Returns where to send the system.
 	 * @param deliveryLocation			Returns where the replacement was sent if any.
